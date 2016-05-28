@@ -17,7 +17,7 @@ $ ->
 
   socket.onmessage = (event) ->
     if event.data.length
-      $messages.append "<p class='message'>#{event.data}</p>"
+      $messages.append "<div class='bubble-container'><span class='bubble'>#{event.data}</span></div>"
       $messages.scrollTop($messages[0].scrollHeight)
 
   sendMessage = (event) ->

@@ -9,7 +9,6 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css" crossorigin="anonymous">
   <style>
   .main {
     overflow:   none;
@@ -20,9 +19,11 @@
   }
 
   .message-container {
+      position: relative;
       overflow-y: none;
       margin: 20px 0;
       position: relative;
+      padding: 0;
   }
 
   .messages {
@@ -30,10 +31,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-
-  .message {
-      line-height: 32px;
+    display: inline;
   }
 
   .timestamp {
@@ -42,6 +40,20 @@
 
   .sender {
       margin-right: 20px;
+  }
+
+  .bubble-container {
+    min-height:24px;
+    margin: 4px 0;
+  }
+
+  .bubble {
+    position: relative;
+    padding: 2px 10px;
+    background: #caebe0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
   }
   </style>
 </head>
