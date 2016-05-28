@@ -160,8 +160,8 @@ DEPENDENCIES
   fuzzy_match (~> 2.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  puma
   rack-reverse-proxy
-puma
   rails (= 4.2.6)
   redis
   sass-rails (~> 5.0)
