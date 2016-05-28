@@ -1,5 +1,24 @@
-<h1>Tubesock Chat</h1>
-<pre id="output"></pre>
-<form class="chat">
-  <input placeholder="hello world" autofocus>
-</form>
+<div class="container main">
+    <div class="message-container container-fluid">
+        <!--
+        <p class="message">
+            <span class="timestamp">[20:30]</span>
+            <img class="sender" src="http://www.iconarchive.com/icons/yellowicon/game-stars/256/Mario-icon.png" width="32" height="32" />
+            asdmasdmlk;das
+        </p>
+        <p class="message">
+            <span class="timestamp">[20:30]</span>
+            <span class="sender">You:</span>
+            asdmasdmlk;das
+        </p>
+        -->
+        <div class="messages"></div>
+    </div>
+    
+    <form class="chatbox">
+        <div class="form-group">
+            <textarea class="form-control chatbox-textarea" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default pull-right btn-lg" id="submit">Send</button>
+    </form>
+</div>
