@@ -28,6 +28,8 @@ gem 'fuzzy_match', '~> 2.1.0'
 
 # socket connection
 gem 'websocket', '~> 1.2.3'
+gem 'tubesock',  '~> 0.2.7'
+#gem 'haml'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -41,6 +43,8 @@ gem 'websocket', '~> 1.2.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'puma'
+  gem 'redis'
 end
 
 group :development do
