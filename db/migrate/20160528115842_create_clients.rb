@@ -9,7 +9,7 @@ class CreateClients < ActiveRecord::Migration
       t.date       :birthday
       t.string     :city
       t.string     :problem_category
-      t.references :expert, null: false
+      t.references :expert
 
       t.timestamps
     end
