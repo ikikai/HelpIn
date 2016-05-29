@@ -31,6 +31,7 @@ gem 'faye'
 gem 'thin', require: false
 gem 'sync'
 gem 'responders', '~> 2.0'
+gem 'devise'
 #gem 'haml'
 
 # Use ActiveModel has_secure_password
