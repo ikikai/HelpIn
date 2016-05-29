@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160528153511) do
     t.date     "birthday"
     t.string   "city"
     t.string   "problem_category"
-    t.integer  "expert_id",        null: false
+    t.integer  "expert_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
