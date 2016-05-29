@@ -9,4 +9,3 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-SockChat::Application.config.secret_key_base = 'f68a9247a5194cadd0482e208b2fbe9c23f696cee9aa455f241aa4c721400803cf214fe147a5e46aaed8635d07f493890470e9d8cd6a7d192c62baa11b030e25'

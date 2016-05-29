@@ -27,8 +27,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'fuzzy_match', '~> 2.1.0'
 
 # socket connection
-gem 'websocket', '~> 1.2.3'
-gem 'tubesock',  '~> 0.2.7'
+gem 'faye'
+gem 'thin', require: false
+gem 'sync'
+gem 'responders', '~> 2.0'
 #gem 'haml'
 
 # Use ActiveModel has_secure_password
