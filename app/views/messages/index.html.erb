@@ -1,0 +1,12 @@
+<h3>Messages</h3>
+
+<%= sync partial: 'message_row', collection: @messages %>
+<%= sync_new partial: '/mess/message_row', resource: Message.new %>
+
+<hr>
+<%- @current_conversation = Conversation.last %>
+<%= form_for @new_message, url: {action: 'create'} do |f| %>
+    <%= f.hidden_field :conversation_id, value: @current_conversation.id %>
+    <%= f.text_field :text %>
+    <%= f.submit %>
+<% end %>
